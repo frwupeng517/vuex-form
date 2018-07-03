@@ -1,5 +1,10 @@
 const state = {
-  todoLists: []
+  form: {
+    username: '',
+    age: '',
+    gender: 'male',
+    interest: []
+  }
 }
 
 export default state

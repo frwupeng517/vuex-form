@@ -1,1 +1,0 @@
-export const allTodos = state => state.todoLists

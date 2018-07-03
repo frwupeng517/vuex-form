@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import All from '@/components/all'
-import Done from '@/components/done'
-import Undo from '@/components/undo'
-import Delete from '@/components/delete'
+import Form from '../components/form'
+import Result from '../components/result'
 
 Vue.use(Router)
 
@@ -13,23 +11,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'All',
-      component: All
+      name: 'form',
+      component: Form
     },
     {
-      path: '/done',
-      name: 'Done',
-      component: Done
-    },
-    {
-      path: '/undo',
-      name: 'Undo',
-      component: Undo
-    },
-    {
-      path: '/delete',
-      name: 'Delete',
-      component: Delete
+      path: '/result',
+      name: 'result',
+      component: Result
     }
   ]
 })

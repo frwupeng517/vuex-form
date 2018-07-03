@@ -1,7 +1,15 @@
 const mutations = {
-  addTodos (state, payload) {
-    state.todoLists.push(payload)
-    console.log(state.todoLists)
+  updateUsername(state, value) {
+    state.form.username = value
+  },
+  updateAge(state, value) {
+    state.form.age = value
+  },
+  updateGender(state, value) {
+    state.form.gender = value
+  },
+  updateInterest(state, value) {
+    state.form.interest = value
   }
 }
 
